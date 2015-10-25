@@ -1,0 +1,38 @@
+<!DOCTYPE> 
+<html>
+<head>
+	<title>Blogsite</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+	<form>
+					<div id = "rhenz">
+						<label>Title</label>
+						<br><textarea rows = "5" cols = "50" placeholder="Enter the title of your book here..." id="input_title"></textarea><br>	
+
+						<br><b>Author's Identity:</b>
+						<br>Firstname
+						<br><input type="text" placeholder="Enter firstname here..." id="input_firstname" size ="25"/></br>
+						<label>Middlename</label>
+						<br><input type="text" placeholder="Enter middle name here..." id="input_middlename" size = "25" /></br>
+						<label>Lastname</label>
+						<br><input type="text" placeholder="Enter last name here..." id="input_lastname" size = "25"/></br>
+	
+						<label>Contents</label>
+						<br><textarea rows = "15" cols = "95" placeholder = "Enter your text here..." id="input_content"></textarea><br>
+					</div>
+					<input type= "button" id ="button" value = "POST" onclick = "post()">
+				<div>
+					<hr>
+					<h1>About your book:</h1>
+					<h2>Title</h2>
+					<label id = "title"></label>
+					<h2>Author</h2>
+					<label id = "author"></label>
+					<h2>Contents</h2>
+					<p id  = "content">
+				</div>
+				<script  src="post.js" type="text/javascript"> </script>
+</form>
+</body>
+</html>
